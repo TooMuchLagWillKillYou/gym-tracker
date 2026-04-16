@@ -200,7 +200,7 @@ def get_exercises() -> list[str]:
 # ---------------------------------------------------------------------------
 def is_authorized(update: Update) -> bool:
     if not ALLOWED_USER_ID:
-        return True
+        return False
     return str(update.effective_user.id) == ALLOWED_USER_ID
 
 
