@@ -84,12 +84,12 @@ def get_sheet():
 
     if not _sheet.row_values(1):
         _sheet.update("A1", [HEADERS])
-        _sheet.format("A1:I1", {
-            "backgroundColor": {"red": 0.184, "green": 0.329, "blue": 0.588},
+        _sheet.format("A1:I1", { 
+            "backgroundColor": {"red": 0.258, "green": 0.526, "blue": 0.957},
             "textFormat": {
                 "bold": True,
                 "foregroundColor": {"red": 1, "green": 1, "blue": 1},
-                "fontFamily": "Arial", "fontSize": 11,
+                "fontFamily": "Roboto", "fontSize": 10,
             },
             "horizontalAlignment": "CENTER",
         })
